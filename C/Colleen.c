@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /*
-Comment 1
+Salut !
 */
 
-void print_str(void)
+void print_source(void)
 {
-	char *str = "#include <stdio.h>%c%c/*%cComment 1%c*/%c%cvoid print_str(void)%c{%c%cchar *str = %c%s%c;%c%cprintf(str, 10, 10, 10, 10, 10, 10, 10, 10, 9, 34, str, 34, 10, 9, 10, 10, 10, 10, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10);%c}%c%cint main(void)%c{%c%c/*%c%cComment 2%c%c*/%c%cprint_str();%c%creturn 0;%c}";
-	printf(str, 10, 10, 10, 10, 10, 10, 10, 10, 9, 34, str, 34, 10, 9, 10, 10, 10, 10, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10);
+	char *source = "#include <stdio.h>%c%c/*%cSalut !%c*/%c%cvoid print_source(void)%c{%c%cchar *source = %c%s%c;%c%cprintf(source, 10, 10, 10, 10, 10, 10, 10, 10, 9, 34, source, 34, 10, 9, 10, 10, 10, 10, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10);%c}%c%cint main(void)%c{%c%c/*%c%cC'est un commentaire dans la fonction main%c%c*/%c%cprint_source();%c%creturn 0;%c}";
+	printf(source, 10, 10, 10, 10, 10, 10, 10, 10, 9, 34, source, 34, 10, 9, 10, 10, 10, 10, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10);
 }
 
 int main(void)
 {
 	/*
-	Comment 2
+	C'est un commentaire dans la fonction main
 	*/
-	print_str();
+	print_source();
 	return 0;
 }

@@ -14,6 +14,8 @@ OBJ_SULLY = $(SRC_SULLY:.c=.o)
 
 FLAGS = -Wall -Werror -Wextra
 
+.PHONY : all clean fclean re
+
 all: $(NAME)
 
 $(OBJ_COLLEEN): $(SRC_COLLEEN)
@@ -38,5 +40,3 @@ fclean: clean
 	@rm -rf $(SULLY)_*
 
 re: fclean all
-
-.PHONY : all clean fclean re
