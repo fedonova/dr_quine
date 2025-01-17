@@ -23,6 +23,7 @@ $(OBJ_COLLEEN): $(SRC_COLLEEN)
 
 $(OBJ_GRACE): $(SRC_GRACE)
 	@gcc -c $(FLAGS) $(SRC_GRACE)
+	@touch $(GRACE)_kid.c
 
 $(OBJ_SULLY): $(SRC_SULLY)
 	@gcc -c $(FLAGS) $(SRC_SULLY)
